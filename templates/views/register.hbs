@@ -1,0 +1,14 @@
+{{!-- action will change the url to localhost:/8000/students --}}
+{{!-- and method will do the desired CRUD , Here POST --}}
+<link rel="stylesheet" type="text/css" href="css/home.css">  
+<link rel="stylesheet" type="text/css" href="css/register.css">  
+{{>navbar}}
+<form action="/students" method="POST">
+  <p>Name</p>
+  <input type="text" name="firstname" /><br />
+  <p>Email</p>
+  <input type="text" name="email"><br><br><br>
+  <input type="submit" value="send">
+</form>
+
+{{!-- once the user click on send button, Submit action(POST method) will take place --}}
